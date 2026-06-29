@@ -33,7 +33,7 @@ jobs:
           name: "Pre-release ${{ github.event.workflow_run.head_branch }}"
           draft: false
           prerelease: true
-          # 包含所有 JAR，但使用 ! 排除 sources 和 javadoc
+          # Include all JARs, exclude sources and javadoc
           files: |
             downloaded-artifacts/**/*.jar
             !downloaded-artifacts/**/*-sources.jar
